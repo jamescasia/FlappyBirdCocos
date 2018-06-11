@@ -20,7 +20,7 @@ cc.Class({
     update (dt) {
          
 
-       if( this.game.camera.x - this.node.x >= 1400 ){cc.log('delete pipe');this.node.destroy();
+       if( this.game.camera.x - this.node.x >= 700 ){cc.log('delete pipe');this.node.destroy();
          }
     }, 
 

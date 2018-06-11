@@ -101,7 +101,7 @@
         this.ctr = 0;
         cc.log("started" + this.camera.x + " " + this.bird.x)
         cc.audioEngine.playEffect(this.swooshClip,false, 1);
-        this.spawnGround(); 
+        this.spawnGround();  
         //this.setScoreBoard();
         
         
@@ -116,12 +116,12 @@
         //    this.bird.x = -144;
         //    this.camera.x = 0;
         //}
-        if(Math.round(this.camera.x % 600) <= 10 ){
+        if(Math.round(this.camera.x % 700) <= 4 ){
             this.ctr+=1;
             this.spawnGround(); 
         }
 
-        if(Math.round(this.camera.x % 100) <= 20  ){ 
+        if(Math.round(this.camera.x % 200 ) <=1   ){ 
             this.pctr+=1; 
             var randPos =  320*cc.random0To1();
             this.spawnPipe( randPos);

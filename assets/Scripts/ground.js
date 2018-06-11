@@ -20,7 +20,7 @@ cc.Class({
     update (dt) {
          
 
-        if( this.game.camera.x - this.node.x >=2100 ){cc.log('destroyed');this.node.destroy();
+        if( this.game.camera.x - this.node.x >=1100 ){cc.log('destroyed');this.node.destroy();
         }
     }, 
 
