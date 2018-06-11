@@ -103,6 +103,8 @@
         cc.audioEngine.playEffect(this.swooshClip,false, 1);
         this.spawnGround();  
         //this.setScoreBoard();
+
+        
         
         
     },
@@ -248,7 +250,7 @@
         if (typeof FBInstant === 'undefined') return;
         FBInstant.shareAsync({
             intent: 'SHARE',
-            image: this.zeropic,
+            image:   this.getIMG(),
             text: 'James is asking for your help!',
             data: {myReplayData: '...'},
         }).then(() => {
@@ -293,5 +295,15 @@
             }
         }
         return canvas.toDataURL('image/png');
+    },
+
+    getIMG(){
+
+        let canvas = document.createElement('canvas');
+        let ctx = canvas.getContext('2d');
+        canvas.width = 200;
+        canvas.height = 200;
+        return canvas.toDataURL('image/png');
+
     }
 });
