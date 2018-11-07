@@ -1,2 +1,2 @@
 # FlappyBirdCocos
-Coding my own flappy game with Cocos Creator 1.9
+This is a Flappy Bird Demo made with Cocos Creator 1.9
